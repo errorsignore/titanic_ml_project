@@ -9,7 +9,7 @@ def create_title(
     titanic_data: pd.DataFrame
 ) -> pd.DataFrame:
     """
-    
+    Create Title on Name column using Regex.
     """
     titanic_data['Title'] = (
         titanic_data['Name']
@@ -45,7 +45,7 @@ def create_family_column(
     titanic_data: pd.DataFrame
 ) -> pd.DataFrame:
     """
-    
+    Create Family Size Column.
     """
     titanic_data['FamilySize'] = (
         titanic_data['SibSp'] + titanic_data['Parch'] + 1
