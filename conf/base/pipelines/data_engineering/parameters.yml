@@ -1,0 +1,18 @@
+SEED: 42
+train_test_ratio: 0.33
+target_column: 'Survived'
+
+columns_to_keep: [
+  'Pclass'
+  , 'Sex'
+  , 'Age'
+  , 'SibSp'
+  , 'Parch'
+  , 'Fare'
+  , 'Embarked'
+  , 'Title'
+  , 'FamilySize'
+  , 'hasCabin'
+  , 'isAlone'
+  , 'Survived'
+]
