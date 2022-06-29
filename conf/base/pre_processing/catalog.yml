@@ -1,0 +1,9 @@
+titanic_data:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train.csv
+  layer: raw
+
+pre_processed_titanic_data:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/pre_processed_titanic_data.csv
+  layer: intermediate
