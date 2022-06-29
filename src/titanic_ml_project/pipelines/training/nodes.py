@@ -230,7 +230,6 @@ def fit_best_model(
     ])
 
     feature_importance_plot = generate_feature_importance_plot(column_names, clf_list)
-    # feature_importance_plot = []
 
     run_name = datetime.now().isoformat()
 

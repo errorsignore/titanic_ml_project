@@ -1,0 +1,50 @@
+# API information
+title: 'Titanic Classifier'
+description: >
+  This classifier tells you your % Survival Rate in Titanic Crash. 🚀
+version: '0.1.0'
+
+tags:
+  users:
+    description: "Operations with users. The **login** logic is also here."
+  items:
+    description: "Manage items. So _fancy_ they have their own docs."
+
+routes:
+  my_model:
+    predictor: MLPredictor
+
+    tags: ['users']
+
+    parameters:
+      Pclass:
+        type: int
+      Age:
+        type: float
+      SibSp:
+        type: int
+      Parch:
+        type: int
+      Fare:
+        type: float
+      hasCabin:
+        type: bool
+      Sex:
+        type: enum
+        options:
+          - female
+          - male
+      Embarked:
+        type: enum
+        options:
+          - C
+          - S
+          - Q
+      Title:
+        type: enum
+        options:
+          - Mr
+          - Miss
+          - Mrs
+          - Master
+          - Rare
