@@ -44,6 +44,6 @@ The pipeline structure of this project is based on what we think is the optimal 
 
   1) **Pre-processing pipeline**: basic data manipulation such as rename columns, filter rows, select, cast data type.
   2) **Data engineering pipeline**: create new features, handling the missing data, here we have more complex data manipulations
-  3) **Data science pipeline**: train models, while testing different techniques and hyperparameters tuning. If you are working on a project with multiple objectives, I suggest you rename your pipeline based on your model. Let's suppose we wanted also to predict the pokemon attack. Then, we would have a pipeline named predict_primary_type and predict_attack if this was another objective, and the data science pipeline would be extinct.
-  4) **Model metrics pipeline**: a pipeline to make report of our precision and register our metrics using MLFlow
-  5) **Indicium predictor**: the optimal way that we developed at [Indicium](https://indicium.tech/) to use our models in API.
+  3) **Training pipeline**: train models, while testing different techniques and hyperparameters tuning.
+  4) **API pipeline**: Create Model and be used by Fast-API.
+  5) **Titanic Predictor**: the optimal way that we developed at [Indicium](https://indicium.tech/) to use our models in API.
