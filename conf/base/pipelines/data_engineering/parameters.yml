@@ -1,4 +1,3 @@
-SEED: 42
 train_test_ratio: 0.33
 target_column: 'Survived'
 
